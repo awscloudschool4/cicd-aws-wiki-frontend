@@ -6,18 +6,18 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: project7-front
+      app: aws-wiki-front
   template:
     metadata:
       labels:
-        app: project7-front
+        app: aws-wiki-front
     spec:
       containers:
       - name: frontend
-        image: public.ecr.aws/w7f8a1j5/aws-school-project7-cicd-aws-repo-frontend-latest:latest
+        image: 592905556313.dkr.ecr.ap-northeast-2.amazonaws.com/aws-wiki-frontend-repo:latest
         imagePullPolicy: "Always"
         ports:
-        - containerPort: 80
+        - containerPort: 3000
         env:
         - name: API_URL
           value: http://my-django-svc.default.svc.cluster.local:8000
