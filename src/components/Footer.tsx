@@ -10,7 +10,7 @@ const Footer = () => {
           ©{currentYear} AWS Cloud Schol 4기 CI/CD팀 3조. All rights reserved.
         </p>
         <p>
-          정만성, 김영우, 한규민, 박재연
+          정만성, 김영우, 한규민
         </p>
       </footer>
     </div>
